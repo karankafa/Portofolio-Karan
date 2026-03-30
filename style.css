@@ -62,4 +62,29 @@ body { scroll-behavior: smooth; color: #333; }
 @media (max-width: 768px) {
     .about-grid, .projects-grid, .contact-grid { grid-template-columns: 1fr; }
     .about-sidebar { display: none; }
+/* Merapikan Widget Bahasa di Navbar */
+.lang-switcher {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Menyembunyikan Toolbar Google yang mengganggu di atas layar */
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+body {
+    top: 0px !important;
+}
+
+/* Penyesuaian untuk tampilan Mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+    .lang-switcher {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
 }
